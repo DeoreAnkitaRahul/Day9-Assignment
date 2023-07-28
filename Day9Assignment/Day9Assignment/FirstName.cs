@@ -9,11 +9,12 @@ namespace Day9Assignment
 {
    public class FirstName
    {
-        public const string Regex_MobileNo = "^[0-9]{1,2}[ ][0-9]{10}$";
-        public bool ValidateMobileNumber(string num)
+        public const string Regex_Password = "^[!@#$%^&*?<>0-9a-zA-Z]{8}$";
+        public bool ValidatePassword(string Pass)
         {
-            return Regex.IsMatch(num, Regex_MobileNo);
+            return Regex.IsMatch(Pass, Regex_Password);
         }
+
 
     }
 }
