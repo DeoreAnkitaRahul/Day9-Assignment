@@ -9,11 +9,11 @@ namespace Day9Assignment
 {
    public class FirstName
    {
-        public static string REGEX_LASTNAME = "^[A-Z]{1}[a-z]{2,}$";
-
-        public bool validateLastName(string lastName)
-        {
-            return Regex.IsMatch(lastName, REGEX_LASTNAME);
-        }
+           public const string Regex_Email = "^[a-zA-Z0-9]+([._#][a-zA-Z0-9]+)*[@][a-zA-Z]+[.][A-Za-z]{2,}([.][a-z]{2})?$";
+            public bool ValidateEmail(string email)
+            {
+                return Regex.IsMatch(email, Regex_Email);
+            }
+        
     }
 }
